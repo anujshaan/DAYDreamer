@@ -1,11 +1,11 @@
-
-import './App.css';
+import Topbar from "./Components/Topbar/Topbar";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>DAYDreamer</h1>
-      <h3>Live from 25 August </h3>
+      <Topbar />
+      <Home />
     </div>
   );
 }
