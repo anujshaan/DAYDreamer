@@ -5,7 +5,7 @@ export default function Post() {
         <div className="post">
             <img 
                 className="postImg"
-                src="https://images.news18.com/ibnlive/uploads/2021/07/1627377451_nature-1600x900.jpg" 
+                src="https://k6u8v6y8.stackpathcdn.com/blog/wp-content/uploads/2015/03/1122-Top-things-to-do-in-manali.jpg" 
                 alt="" 
             />
             <div className="postInfo">
