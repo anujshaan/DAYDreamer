@@ -1,6 +1,7 @@
 import './topbar.css';
+import { Link } from 'react-router-dom';
 
-export default function Topbar() {
+export default function Topbar({user}) {
     return (
         <div className="topbar">
             <div className="topbarLeft">
@@ -11,16 +12,43 @@ export default function Topbar() {
             </div>
             <div className="topbarCenter">
                 <ul className="topbarList">
-                    <li className="topbarListItem">Home</li>
-                    <li className="topbarListItem">About</li>
-                    <li className="topbarListItem">Contact us</li>
-                    <li className="topbarListItem">Write</li>
-                    <li className="topbarListItem">Logout</li>
+                    <li className="topbarListItem">
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li className="topbarListItem">
+                        <Link to="/">About</Link>
+                    </li>
+                    <li className="topbarListItem">
+                        <Link to="/">Contact us</Link>
+                    </li>
+                    <li className="topbarListItem">
+                        <Link to="/write">Write</Link>
+                    </li>
+                    <li className="topbarListItem">
+                        <Link to="/register">
+                            {user && "Logout"}
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className="topbarRight">
-                <img className="topbarImg" src="https://wallpaperaccess.com/full/1762310.jpg" alt="" />
-                <i className="topbarSearchIcon fas fa-search"></i>
+                {
+                    user ? (<>
+                        <img className="topbarImg" src="https://wallpaperaccess.com/full/1762310.jpg" alt="" />
+                        <i className="topbarSearchIcon fas fa-search"></i>
+                    </>
+                    ):(
+                    <ul className="topbarList">
+                        <li className="topbarListItem">
+                            <Link className="link" to ="/register">Register</Link>
+                        </li>
+                        <li className="topbarListItem">
+                            <Link className="link" to ="/login">Login</Link>
+                        </li>
+                    </ul>
+                    )
+                }
+                
             </div>
         </div>
     )
