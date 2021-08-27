@@ -1,0 +1,82 @@
+.register{
+    height: calc(90vh - 60px);
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: teal;
+}
+.registerLogo > h1{
+    font-size: 100px;
+    color:#fff;
+    text-align: center;
+}
+.hrLine{
+    height: 70vh;
+    border: 2px solid black;
+}
+.registerFormWrapper{
+    height: 70vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+}
+.registerForm > label{
+    font-size: 30px;
+    font-weight: 500;
+    color: #555;
+}
+.registerForm > input{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border:1px solid #555;
+    font-size: 20px;
+    margin: 0.5rem 0;
+    margin-bottom: 3rem;
+}
+.registerFormName{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.registerFormNameStyle{
+    font-size: 30px;
+    font-weight: 500;
+    color:#555;
+}
+.registerFormNameStyle > input{
+    padding:0.5rem 1rem;
+    border: 1px solid;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.registerButton{
+    padding:1rem 2rem;
+    border-radius: 50px;
+    border:none;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgb(85, 214, 214);
+    color: #fff;
+    width: 60%;
+    margin:auto;
+    cursor: pointer;
+}
+.registerLoginButton{
+    width: 60%;
+    padding:1rem 2rem;
+    border-radius: 50px;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    font-weight: 500;
+}
